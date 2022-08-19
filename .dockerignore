@@ -1,0 +1,12 @@
+.github
+.husky
+.vscode
+node_modules
+test
+.env.*
+.eslintrc.json
+.gitignore
+.prettierrc.json
+.prettierignore
+*.log
+tsconfig.json

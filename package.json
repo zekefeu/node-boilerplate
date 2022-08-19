@@ -1,0 +1,32 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test-ui": "vitest --ui",
+    "prettier": "npx prettier -w .",
+    "lint": "eslint src/**/*.js",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "fuka-g",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.7.7",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "@vitest/ui": "^0.22.1",
+    "eslint": "^8.22.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "vitest": "^0.22.1"
+  },
+  "dependencies": {
+    "@fuka-g/keylog": "^0.0.5",
+    "dotenv": "^16.0.1"
+  }
+}
