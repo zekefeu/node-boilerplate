@@ -1,32 +1,43 @@
 {
-  "name": "boilerplate",
+  "name": "PROJECT_NAME",
   "version": "0.0.0",
   "description": "",
-  "main": "src/main.js",
+  "main": "build/main.js",
   "type": "module",
   "scripts": {
+    "watch": "nodemon --watch build .",
     "test": "vitest",
+    "test-once": "vitest --watch false",
     "test-ui": "vitest --ui",
-    "prettier": "npx prettier -w .",
-    "lint": "eslint src/**/*.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docker-build": "docker build -t PROJECT_NAME:latest .",
+    "eslint": "eslint --cache --fix src/**/*.ts",
+    "prettier": "prettier --cache --write --check .",
+    "lint": "yarn prettier && yarn eslint"
   },
-  "keywords": [],
-  "author": "fuka-g",
+  "lint-staged": {
+    "*.{ts,md}": "prettier --cache --write"
+  },
+  "engines": {
+    "node": "^18.0.0"
+  },
+  "author": "zekefeu",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.7.7",
-    "@typescript-eslint/eslint-plugin": "^5.33.1",
-    "@typescript-eslint/parser": "^5.33.1",
-    "@vitest/ui": "^0.22.1",
-    "eslint": "^8.22.0",
-    "husky": "^8.0.1",
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4",
-    "vitest": "^0.22.1"
+    "@types/node": "^18.11.17",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "@vitest/ui": "^0.26.2",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4",
+    "vitest": "^0.26.2"
   },
   "dependencies": {
-    "@fuka-g/keylog": "^0.0.5",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.3",
+    "keylog": "^0.1.1"
   }
 }

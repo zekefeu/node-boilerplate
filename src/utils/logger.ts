@@ -1,14 +1,14 @@
 /**
  * utils/logger.ts
- * 
+ *
  * License: MIT
- * Authors: fuka-g
+ * Authors: zekefeu
  */
 
-import * as keylog from "@fuka-g/keylog";
+import * as keylog from "keylog";
 
 export const logger = new keylog.Logger({
-	name: "app",
+	name: "PROJECT_NAME",
 	transports: [
 		new keylog.transports.ConsoleTransport({ level: "info" }),
 		new keylog.transports.FileTransport({ level: "info", path: "latest.log" }),

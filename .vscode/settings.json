@@ -1,5 +1,9 @@
 {
   "files.exclude": {
-    "src/**/*.js": true
+    "build": true,
+    "node_modules": true,
+    ".husky": true,
+    ".eslintcache": true,
+    ".tsbuildinfo": true
   }
 }

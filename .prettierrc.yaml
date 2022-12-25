@@ -1,0 +1,12 @@
+semi: true
+useTabs: true
+endOfLine: lf
+singleQuote: false
+trailingComma: es5
+bracketSpacing: true
+
+overrides:
+  - files: "*.json"
+    options:
+      useTabs: false
+      tabWidth: 2

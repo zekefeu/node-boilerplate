@@ -1,6 +1,8 @@
 /**
  * types/global.d..ts
- * 
+ *
  * License: MIT
- * Authors: fuka-g
+ * Authors: zekefeu
  */
+
+declare module "PROJECT_NAME" {}
