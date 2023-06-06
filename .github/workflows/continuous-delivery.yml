@@ -30,4 +30,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Push the image to Docker Hub
-        run: docker push IMAGE_NAME:latest
+        run: docker push PROJECT_NAME:latest

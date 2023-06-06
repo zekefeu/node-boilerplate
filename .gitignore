@@ -25,3 +25,4 @@ build
 .tsbuildinfo
 .eslintcache
 .tsbuildinfo
+.yarn/install-state.gz

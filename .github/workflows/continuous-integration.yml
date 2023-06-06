@@ -20,5 +20,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Compile TS files
+        run: npx tsc --watch false
+
       - name: Run tests
         run: yarn test-once
